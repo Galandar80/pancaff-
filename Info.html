@@ -1,0 +1,194 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #0a0a0a;
+}
+
+.event-card {
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 255, 170, 0.1);
+    transition: all 0.3s;
+    border: 1px solid #00ffaa;
+    position: relative;
+}
+
+.event-card.highlighted {
+    border-width: 2px;
+    box-shadow: 0 0 30px rgba(0, 255, 170, 0.3);
+}
+
+.event-card.highlighted::before {
+    background: linear-gradient(45deg, transparent, rgba(0, 255, 170, 0.2), transparent);
+}
+
+.event-card.highlighted:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 0 40px rgba(0, 255, 170, 0.4);
+}
+
+.highlight-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #00ffaa;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 255, 170, 0.5);
+}
+
+.event-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #00ffaa;
+}
+
+.event-content {
+    padding: 20px;
+    background: linear-gradient(to bottom, #1a1a1a, #2a2a2a);
+}
+
+.event-title {
+    color: #00ffaa;
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(0, 255, 170, 0.5);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.event-subtitle {
+    color: #fff;
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    opacity: 0.8;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.event-details {
+    color: #00ffaa;
+    margin: 10px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.event-details::before {
+    content: '►';
+    color: #00ffaa;
+}
+
+.event-description {
+    color: #fff;
+    line-height: 1.6;
+    opacity: 0.8;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+}
+</style>
+
+<div class="events-container">
+
+    <div class="event-card ">
+        
+        <img src="https://i.imgur.com/58O67xd.png" alt="Entra nella community di CS2" class="event-image">
+        <div class="event-content">
+            <h3 class="event-title">Entra nella community di CS2</h3>
+            <h4 class="event-subtitle">Enjoy Community</h4>
+            <p class="event-details">Data: </p>
+            <p class="event-details">Orario: </p>
+            <p class="event-description">Entra nella nostra community di CS2
+Usa Il QR-code</p>
+        </div>
+    </div>
+
+    <div class="event-card ">
+        
+        <img src="https://i.imgur.com/gBSLsLZ.jpeg" alt="Torneo League Of Legends 5v5" class="event-image">
+        <div class="event-content">
+            <h3 class="event-title">Torneo League Of Legends 5v5</h3>
+            <h4 class="event-subtitle">15 Giugno</h4>
+            <p class="event-details">Data: 2025-06-15</p>
+            <p class="event-details">Orario: 11:00</p>
+            <p class="event-description">Entra e iscrivi il tuo team o anche tu da solo su: https://challonge.com/it/summerwar
+Quota di partecipazione: 8 euro
+Premi in base al numero di team - Buoni Amazon -
+Omaggi per i partecipanti.</p>
+        </div>
+    </div>
+
+    <div class="event-card ">
+        
+        <img src="https://i.imgur.com/1mehdOK.png" alt="Entra nella community di COD" class="event-image">
+        <div class="event-content">
+            <h3 class="event-title">Entra nella community di COD</h3>
+            <h4 class="event-subtitle">Enjoy Community COD</h4>
+            <p class="event-details">Data: </p>
+            <p class="event-details">Orario: </p>
+            <p class="event-description">Entra nella nostra community di COD
+Usa Il QR-code</p>
+        </div>
+    </div>
+
+    <div class="event-card ">
+        
+        <img src="https://i.imgur.com/OnasZGP.png" alt="Entra nella community di Valorant" class="event-image">
+        <div class="event-content">
+            <h3 class="event-title">Entra nella community di Valorant</h3>
+            <h4 class="event-subtitle">Enjoy Community Valorant</h4>
+            <p class="event-details">Data: </p>
+            <p class="event-details">Orario: </p>
+            <p class="event-description">Entra nella nostra community di Valorant
+Usa Il QR-code</p>
+        </div>
+    </div>
+
+    <div class="event-card ">
+        
+        <img src="https://i.imgur.com/DBfnVJT.jpeg" alt="Raduno Tekken 8" class="event-image">
+        <div class="event-content">
+            <h3 class="event-title">Raduno Tekken 8</h3>
+            <h4 class="event-subtitle">Ogni Sabato </h4>
+            <p class="event-details">Data: </p>
+            <p class="event-details">Orario: 17:00</p>
+            <p class="event-description">Entra nella community: https://chat.whatsapp.com/BUaniu9PJcJK5x3ejbGiEA</p>
+        </div>
+    </div>
+
+    <div class="event-card ">
+        
+        <img src="https://i.imgur.com/MW5ODEr.jpeg" alt="Raduno Di Super Smash Ultimate" class="event-image">
+        <div class="event-content">
+            <h3 class="event-title">Raduno Di Super Smash Ultimate</h3>
+            <h4 class="event-subtitle">Ogni Venerdì</h4>
+            <p class="event-details">Data: </p>
+            <p class="event-details">Orario: 17:00</p>
+            <p class="event-description">Entra nella Community: https://chat.whatsapp.com/D5Jh20UpzSyAQ7wQQUseaL</p>
+        </div>
+    </div>
+
+</div>
